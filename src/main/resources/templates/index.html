@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Spring Security Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 	href="/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+	<h1>A page for everyone</h1>
+	<p >
+		<span th:text="${serverTime}" />
+		<span th:text="${greeting}">	</span>
+
+	</p>
+	<p>Unknown user, click below to enter the site <br />
+		<a th:href="@{/enigma}" class="btn btn-danger">Login</a>  </p>
+</div>
+
+<script	src="/js/jquery.min.js"></script>
+<script	src="/js/popper.min.js"></script>
+<script	src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
